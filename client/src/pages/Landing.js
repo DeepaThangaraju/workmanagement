@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 export const Landing = () => {
   return (
     <Wrapper>
-        <nav>
+        <nav style={{width:"5rem",height:"5rem"}}>
               <Logo/>  
               <h2 className='logo-text'>Work Manager</h2>  
         </nav>
