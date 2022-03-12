@@ -10,7 +10,7 @@ export const Landing = () => {
     <Wrapper>
         <nav>
               <Logo/>  
-              <h4 className='logo-text'>Work Manager</h4>  
+              <h2 className='logo-text'>Work Manager</h2>  
         </nav>
         <div className='container page'>
             <div className='info'>
