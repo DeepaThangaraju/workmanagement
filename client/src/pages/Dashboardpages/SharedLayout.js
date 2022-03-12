@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Wrapper from "../../assets/wrappers/SharedLayout";
 import AddWork from "./AddWork";
@@ -11,6 +11,7 @@ import { useHistory } from "react-router-dom";
 const SharedLayout = () => {
   const user = localStorage.getItem("user");
   const history = useHistory();
+  
 
   return (
     <>
@@ -31,7 +32,8 @@ const SharedLayout = () => {
                     <Link to="/profile"></Link>
                   </nav> */}
                   <Switch>
-                 <Route exact path="/allwork" component={AllWork}/>
+                 
+                 <Route exact path="/allwork" component={AllWork} />
                  <Route path="/addwork" component={AddWork}/>
                  <Route path="/profile" component={Profile}/>
                  <Route index component={Stats}/>

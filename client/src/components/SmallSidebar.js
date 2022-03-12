@@ -5,7 +5,7 @@ import { Logo } from "./Logo";
 import NavLinks from "./NavLinks";
 
 const SmallSidebar = () => {
-  const { showSidebar, toggleSidebar } = useAppContext();
+  const { showSidebar, toggleSidebar,refreshPage } = useAppContext();
   
   return (
     <Wrapper>
@@ -22,7 +22,7 @@ const SmallSidebar = () => {
             <Logo />
             <h4 className="logo-text">Work Manager</h4>
           </header>
-         <NavLinks toggleSidebar={toggleSidebar}/>
+         <NavLinks toggleSidebar={toggleSidebar} refreshPage={refreshPage}/>
         </div>
       </div>
     </Wrapper>

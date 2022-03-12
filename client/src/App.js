@@ -39,13 +39,12 @@ function App() {
        <Switch> 
        <Route path="/landing" component={Landing} exact />
        <Route path="/register" component={Register} exact/>
-         <Route path="/" component={SharedLayout} render={() =>{
+         <Route path="/" component={SharedLayout} components={() =>{
            return <Fragment>
             <AllWork/>
             <AddWork/>
             <Profile/>
             <Stats/>
-            <Route path="/allwork" component={AllWork}/>
             </Fragment>
           }} />  
           <Route path="/sharedlayout" component={SharedLayout} />

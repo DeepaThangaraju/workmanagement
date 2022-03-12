@@ -1,9 +1,12 @@
-import React from 'react'
+import { WorkContainer,SearchContainer } from "../../components"
 
 const AllWork = () => {
     
   return (
-    <div>AllWork</div>
+   <>
+   <SearchContainer/>
+   <WorkContainer/>
+   </>
   )
 }
 

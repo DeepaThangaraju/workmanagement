@@ -49,7 +49,7 @@ const Wrapper = styled.article`
     background: #e0e8f9;
     color: #647acb;
   }
-  .declined {
+  .finished {
     color: #d66a6a;
     background: #ffeeee;
   }

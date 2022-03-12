@@ -1,6 +1,6 @@
 import React from 'react'
 import { Logo } from '../components/index'
-import main from "../assets/images/main.svg"
+import main1 from "../assets/images/main1.svg"
 
 import Wrapper from '../assets/wrappers/Testing'
 import { Link } from 'react-router-dom'
@@ -9,7 +9,8 @@ export const Landing = () => {
   return (
     <Wrapper>
         <nav>
-              <Logo/>    
+              <Logo/>  
+              <h4 className='logo-text'>Work Manager</h4>  
         </nav>
         <div className='container page'>
             <div className='info'>
@@ -23,7 +24,7 @@ export const Landing = () => {
 
         </div>
        
-        <img src={main} alt="Management" className='img main-img' ></img>
+        <img src={main1} alt="Management" className='img main-img' ></img>
        
         </div>
     </Wrapper>
